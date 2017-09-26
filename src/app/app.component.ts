@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  view:string = 'month';
+  events:any[] = [];
+  viewDate:Date = new Date();
+  addModal = () => {
+    console.log("ass");
+  }
 }
